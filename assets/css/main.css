@@ -1,0 +1,522 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   
+}
+
+/*CSS cua phần trên nav*/
+.header{
+    max-height:120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-image: linear-gradient(0,#fe6433,#f6432e);
+}
+.header__navbar{
+    display: flex;
+    height: 35px;
+
+    justify-content: space-between;
+}
+
+.header__navbar-list{
+    padding-left: 0;   
+}
+.header__navbar-item{
+    position: relative;
+  /*min-height: 26px;*/
+    margin: 0 8px;
+
+}
+.header__navbar-item--QRcode:hover .QR_code{
+    display: block;
+}
+.header__navbar-item,
+.header__navbar-item-link {
+    font-size: 1.5rem;
+    color: white;
+    display: inline-block;
+    font-weight: 400;     
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover{
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+.header__navbar-item--a::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15px;
+    border-left: 1px solid white;
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%);
+    
+}
+.icon{
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+.no-pointer
+{
+    color: white;
+    cursor: text;
+}
+
+
+/*Header QR CODE*/
+.QR_code{
+    border-radius: 4px;
+    max-width:200px; 
+    position: absolute;
+    height: 250px;
+    margin-top: 8px;
+    display: none;
+    background-color: white;
+}
+.QR_code::before{
+   
+    position: absolute;
+    height: 10%;
+    width: 100%;    
+    top: -20px;
+    display: block;
+    content: "";
+}
+
+
+.QR_code_image{   
+  width: 199px;
+}
+.link{
+  margin-left: 11px;
+    display: flex;
+   
+    flex-wrap: wrap;
+    width: 170px;
+    justify-content: space-between;
+}
+.image_link{
+    
+  width: 7rem;
+  margin-top: 0.3125rem;
+
+}
+
+.image_link_a{
+    width: 100%;   
+}
+
+/*CSS cua phần thông báo*/
+.thongbao{
+    width: 400px;
+    height: 350px;
+     position: absolute;
+    display: none;
+    right:  0;
+  
+    margin-top: 15px;
+}
+.thongbao::before{
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    right: 25px;
+    top: -35px;
+}
+.header__navbar-item--thongbao:hover .thongbao{
+    display: block;
+}
+.khungthongbao{
+    width: 400px;
+    height: 310px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+} 
+.hinhanh{
+    background-color: white;
+    position: relative; 
+    width: 100%;
+    color: black;
+}
+.thongtin{
+    display: flex;
+    height:40px; 
+    width: 100%;
+}
+.left,
+.right{
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+.left:hover,
+.right:hover{
+    color: #ee4d2d;
+    background-color: #e8e8e8;
+}
+.note{
+   margin: 20px 0 0 0;
+}
+
+/*CSS logo shoppe */
+.search__navbar{
+    height: 85px;
+    display: flex;
+}
+.logo__shopee{
+    width: 202px;
+    height: 59px;
+    position: relative;
+    padding-right: 2.5rem;
+
+}
+.shoppe__icon{
+    fill: white;
+  
+}
+.shoppe_image{
+    width: 162px;
+    height:50px;
+}
+
+/*CSS khung tim kiem*/
+.search__navbar{
+    padding: 16px 0 10px 0;
+}
+
+.search{
+    width: 840px;
+    height: 59px; 
+}
+
+.search__item{
+    display: flex;
+    width: 840px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.search__bar{
+    width: 774px;
+    height: 34px;
+}
+
+.search__bar-input{
+    width: 100%;
+    height: 34px;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+}
+
+.search__input{
+    width: 100%;
+    height: 34px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.search__button{
+    width: 60px;
+    height: 34px;
+    padding: 0 15px 0 15px;
+    background-color: #fb5533;
+    border: none;
+    border-radius: 2px;
+}
+.search__button:hover{
+    background-color: #fb6445;
+    cursor: pointer;
+}
+.shopee-svg-icon{
+    margin: 0 7px 0 7px;
+    fill: white;
+}
+/*CSS phan duoi khung tim kiem*/
+.list__link{
+    width: 840px;
+    height: 19px;
+}
+
+.list-item{
+    margin-top: 5px;
+    width:605px;
+    height: 19px;
+
+
+}
+.list{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    margin-left: 13px;   
+}
+.list:first-child
+{
+    margin-left: 0px;
+}
+
+/*CSS phan icon shopping cart*/
+.shopping{
+    width: 138px;
+    height: 59px;
+    padding-bottom: 5px;
+    margin: 0 10px 0 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.kichthuoc-icon{
+    width: 41px;
+    height: 46px;
+
+}
+
+.cart-container{
+    width: 41px;
+    height: 46px;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+.link_shopping{
+    margin-left: 5px;
+    width: 36px;
+    height: 26px;
+
+}
+.fas{
+  font-size: 2.5rem;
+  color: white;
+}
+
+
+/*CSS phần thân trang web*/
+
+.home-page{
+    background-color: #f5f5f5;
+}
+.grid__row{
+   
+    width: 1200px;
+    margin-top: 120px;
+}
+.banner{
+    width: 1200px;
+    height: 383px;
+    padding-top: 30px;
+    background-color: white;
+    overflow: hidden;
+
+}
+.slide-image{
+  width: 100%;
+  height: 235px;
+  display: flex;
+}
+.left{
+    width: 796px;
+    height: 235px; 
+    position: relative;  
+ 
+}
+.a{
+    width: 796px;
+    height: 235px;
+}
+.mySlides {display: none}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dots{
+    position: absolute;
+    margin-top: -30px;
+    text-align:center;
+   width: 796px;
+
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+ 
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+
+.right{
+    width:398px ;
+    height: 235px;
+    flex-direction: column;
+    margin-left: 5px;
+    background-color: white;   
+}
+.banner-right{
+    
+    border-radius:2px ;
+    width: 100%;  
+}
+
+.banner-right:first-child{
+    overflow: hidden;
+    border-top-right-radius: 2px;
+ 
+}
+.banner-right:last-child{
+    overflow: hidden;
+    margin-top: 5px;
+    border-bottom-right-radius: 2px;
+ 
+}
+.image-right{
+    height: 115px;
+    width: 398px;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.logo-icon{
+    width: 45px;
+    height: 45px; 
+}
+
+.tien-ich{
+    width: 1200px;
+    min-height: 108px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0; 
+}
+.khung{
+    width: 100px;
+   
+}
+.iconTienIch{
+    width: 45px;
+    height: 45px;
+    margin: 18px auto 8px;
+   
+}
+
+
+.tieuDe{
+    max-width: 150px;
+    font-size: 13px;
+    height: 27.3px;
+    margin-bottom: 8px;
+    text-align: center;
+    word-wrap: break-word;
+}
+.editTieuDe{
+
+    letter-spacing: 0;
+    color: #222;
+}
+.welcom{
+    width: 1200px;
+    height: 110px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: 50%;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+ @media (min-width: 1024px)
+ {
+    .home-page{
+        display: block;
+    }
+    .header{
+        display: block;
+    }
+ }
+
+ @media (min-width: 740px ) and (max-width: 1023px)
+ {
+     .home-page{
+        width: 740px;
+     }
+     .header{
+         width: 740px;
+     }
+
+
+ }
+
+ @media (max-width: 740px)
+ {
+    .home-page{
+        display: block;
+    }
+    .header{
+        display: block;
+    }
+ }
