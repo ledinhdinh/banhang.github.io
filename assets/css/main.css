@@ -17,19 +17,20 @@
 }
 .header__navbar{
     display: flex;
-    height: 35px;
-    justify-content: space-between;
+    height: 34px;  
 }
 
+.header__space{flex: 1;}
 .header__navbar-list{
-    padding-left: 0;   
+    padding-left: 0; 
+
 }
 .header__navbar-item{
     position: relative;
   /*min-height: 26px;*/
     margin: 0 8px;
-
 }
+
 .header__navbar-item--QRcode:hover .QR_code{
     display: block;
 }
@@ -55,9 +56,9 @@
     border-left: 1px solid white;
     top: 50%;
     right: -9px;
-    transform: translateY(-50%);
-    
+    transform: translateY(-50%);   
 }
+
 .icon{
     font-size: 1.6rem;
     margin: 0 4px;
@@ -94,9 +95,8 @@
   width: 199px;
 }
 .link{
-  margin-left: 11px;
-    display: flex;
-   
+    margin-left: 11px;
+    display: flex; 
     flex-wrap: wrap;
     width: 170px;
     justify-content: space-between;
@@ -135,7 +135,7 @@
     display: block;
 }
 
-.khungthongbao{
+.section__khungthongbao{
     width: 400px;
     height: 310px;
     background-color: white;
@@ -206,12 +206,11 @@
 
 .search{
     width: 840px;
-    height: 59px; 
 }
 
 .search__item{
     display: flex;
-    width: 840px;
+    width: 100%;
     height: 40px;
     padding: 3px;
     border-radius: 2px;
@@ -219,19 +218,19 @@
 }
 
 .search__bar{
-    width: 774px;
+   flex: 1;
     height: 34px;
 }
 
 .search__bar-input{
     width: 100%;
-    height: 34px;
-    padding: 0 0 0 10px;
+    margin: 0;
     box-sizing: border-box;
 }
 
 .search__input{
-    width: 100%;
+   width: 100%;
+   padding: 0 0 0 10px ;
     height: 34px;
     border: none;
     outline: none;
@@ -239,8 +238,9 @@
 }
 
 .search__button{
-    width: 60px;
-    height: 34px;
+    min-width: 60px;
+    max-width: 190px;
+    height: 34px; 
     padding: 0 15px 0 15px;
     background-color: #fb5533;
     border: none;
@@ -256,17 +256,16 @@
 }
 /*CSS phan duoi khung tim kiem*/
 .list__link{
-    width: 840px;
-    height: 19px;
+    width: 100%;
+    flex: 1;
+    display: flex;
 }
 
-.list-item{
+.list__item{
     margin-top: 5px;
-    width:605px;
     height: 19px;
-
-
 }
+
 .list{
     font-size: 1.4rem;
     font-weight: 400;
@@ -315,34 +314,35 @@
 
 /*CSS phần thân trang web*/
 
-.home-page{
+.homepage{
     background-color: #f5f5f5;
+    margin-top: 119px;
 }
-.grid__row{  
-    
-    margin-top: 120px;
-}
-.banner{
-    width: 1200px;
-    height: 383px;
-    padding-top: 30px;
-    background-color: white;
-    overflow: hidden;
 
+.section__banner{  
+    height: 383px; 
+    padding-top: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
 }
-.slide-image{
-  width: 100%;
+
+.slide__image{
   height: 235px;
   display: flex;
+
 }
-.left{
-    width: 796px;
-    height: 235px; 
-    position: relative;  
- 
+
+.slide__image-left{   
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: relative;
 }
-.a{
-    width: 796px;
+.banner__img-left{
+  width: 100%;
     height: 235px;
 }
 .mySlides {display: none}
@@ -374,8 +374,8 @@
     position: absolute;
     margin-top: -30px;
     text-align:center;
-    width: 796px;
-
+    width: 100%;
+    align-items: center;
   }
   .dot {
     cursor: pointer;
@@ -401,31 +401,30 @@
 
 
 
-.right{
+.slide__image-right{
     width:398px ;
     height: 235px;
     flex-direction: column;
     margin-left: 5px;
     background-color: white;   
 }
-.banner-right{
-    
+.banner__right{   
     border-radius:2px ;
     width: 100%;  
 }
 
-.banner-right:first-child{
+.banner__right:first-child{
     overflow: hidden;
     border-top-right-radius: 2px;
  
 }
-.banner-right:last-child{
+.banner__right:last-child{
     overflow: hidden;
     margin-top: 5px;
     border-bottom-right-radius: 2px;
  
 }
-.image-right{
+.banner__image-right{
     height: 115px;
     width: 398px;
     background-size: cover;
@@ -436,17 +435,18 @@
     height: 45px; 
 }
 
-.tien-ich{
-    width: 1200px;
+.section__tienich{
+    width: 100%;
     min-height: 108px;
     display: flex;
     justify-content: space-around;
-    margin: 10px auto 0; 
+    margin: 1rem auto 0; 
+    flex-wrap: wrap;
 }
-.khung{
-    width: 100px;
-   
+.section__khung{
+    width: 100px;   
 }
+
 .iconTienIch{
     width: 45px;
     height: 45px;
@@ -455,7 +455,7 @@
 }
 
 
-.tieuDe{
+.section__tieude{
     max-width: 150px;
     font-size: 13px;
     height: 27.3px;
@@ -468,56 +468,99 @@
     letter-spacing: 0;
     color: #222;
 }
-.welcom{
-    width: 1200px;
+.section__welcom{
+    width: 100%;
     height: 110px;
     margin-top: 20px;
     background-size: cover;
     background-position: 50%;
     cursor: pointer;
     overflow: hidden;
-
 }
 
 /*CSS phần danh mục*/
 
-.danhmuc{
+.section__danhmuc{
     display: flex;
-    width: 1200px;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 30px;
 }
 .category{
-    border-radius: 2px;
+    flex:0 0 190px;
     margin-right: 20px;
-    background-color: white;
 }
 .category__heading{
-    font-size: 1.6rem;
-    padding: 8px 16px;
-    margin: 0;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 10px ;
+    display: flex;
+    height: 5.1rem;
+    align-items: center;
+    color: black;
+    border-bottom: 1px solid rgba(0,0,0,.05);
 }
 .category__heading-icon{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: black;
-    margin-right: 4px;
+    margin-right: 10px;
 }
-.category-list{
-   margin-left: 14px;
-   padding: 0 0 8px 0;
+.category__body{
+   padding: 0 ;
+   margin: 0;
 }
 
-.category-item__link{
+.category__item-link{
     position: relative;
-    font-size: 1.4rem;
-    padding: 4px 16px;
+    font-size: 1.6rem;
+    padding: 8px 10px 12px;
     display: block;
+    color: black;
     transition: right linear 0.1s;
     right: 0;
 }
-.category-item__link:hover{
+.category__item-link:hover{
     right: -4px;
     color: red;
+}
+
+.category__search{
+    margin-top: 30px;
+}
+.category__search-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.category__search-city{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.category__search-text {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.category__search-list{
+    margin: 0;
+    padding-left: 0;
+}
+.category__search-result{
+    padding: 8px 0;
+    display: flex;
+    font-size: 1.4rem;
+ 
+}
+.category__search-link{
+    color: black;
+}
+.category__search-link--input{
+    margin-right: 10px;
+    cursor: pointer;
+   
+}
+.category__search-different{
+    padding: 8px 10px 8px 0;
+    margin-left: 26px; 
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .btn{
@@ -541,56 +584,58 @@
     background-color: rgb(238, 77, 45);
     user-select: none;
 }
+.icon__btn-price{
+    height: 100%;
 
+    margin:3px 12px 0 0;
+    align-items: center;
+    color: #696969;
+}
 .icon-btn{
     color: #696969;
 }
 
-.home-filter{
+.filter__product{
+    flex: 1;
+    align-items: center;   
+    
+}
+.home__filter{
     display: flex;
+    flex: 1;
     border-radius: 2px;
     padding: 13px 20px;
-    align-items: center;     
+    align-items: center;
+    justify-content: space-between;
     background-color: rgba(0,0,0,0.04);
 }
 
-.select-input__label{
-     font-size: 1.4rem;
-     width: 154px;     
-     cursor: pointer;  
-     margin: 0 10px 0 12px ;
-}
-
-.price{
-    color: black;
-    align-items: center;
-}
-
-.price:hover{
-    color: #ee4d2d;
-}
-
-.home-filter__page{
+.home__filter-btn{
     display: flex;
-    align-items: center;
-  
-   margin-left: auto;
+    flex: 1;
+    justify-content: flex-start;
 }
 
-.home-filter__pageNumber{
+.home__filter-page{
+    display: flex;
+    align-items: center;  
+    margin-left: auto;
+}
+
+.home__filter-pageNumber{
     font-size: 1.4rem;
 }
 
-.home-filter__pageCurrent{
+.home__filter-pageCurrent{
     color: #ee4d2d;
 }
 
-.home-filter__pageControl{
+.home__filter-pageControl{
     margin-left: 20px;
     padding: 1px 6px;
 }
 
-.home-filter__page-btn{
+.home__filter-pagebtn{
    width: 35px;
     border: none;
     height: 34px;
@@ -599,42 +644,38 @@
 }
 
 /*CSS phần các ô mặt hàng*/
-.grid__row1{
+.home__product{
     margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
 }
-.grid__column-2-4{
-    margin: 5px 0px ;
-    padding: 0px 5px;
 
-    
-}
-.home-product-item{
+.home__product-item{
     background-color: white;
     cursor: pointer;
     position: relative;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     transition: transform linear 0.1s;
-    will-change: transform;
+    will-change: transform;   
 }
-.home-product-item:hover
+
+.home__product-item:hover
 {
     transform: translateY(-1px);
     box-shadow:  0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
-.home-product-item__img{
+.home__product-item--img{
     padding-top: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home-product-item__information
+.home__product-item--information
 {
     padding: 10px;
 }
 
-.home-product-item__name{
+.home__product-item--name{
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.8rem; 
@@ -648,14 +689,14 @@
     -webkit-line-clamp:2 ;
 }
 
-.home-product-item__price{
+.home__product-item--price{
     display: flex;
     padding-top: 5px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.home-product-item__price-old{
+.home__product-item--priceold{
   font-size: 1.3rem;
   white-space: nowrap;
   color: var(--text-color);
@@ -668,18 +709,19 @@
     color: #ee4d2d;
 }
 
-.home-product-item__price-current{
+.home__product-item--pricecurrent{
     font-size: 1.6rem;
     color: #ee4d2d;   
 }
 
-.home-product-item__action{
+.home__product-item--action{
     display: flex;
     justify-content: space-between;  
     margin-top: 5px;
+    height: 1.6rem;
 }
 
-.home-product-item__like{
+.home__product-item--like{
     margin-right: 5px;
     font-size: 1.4rem;
     cursor: pointer;
@@ -689,21 +731,21 @@ i.icon-liked{
     font-size: 1.3rem;
     display: none;
 }
-.home-product-item__liked .icon-liked{
+.home__product-item--liked .icon-liked{
     display: inline-block;
 }
 
-.home-product-item__liked .icon-like{
+.home__product-item--liked .icon-like{
     display: none;
 }
 
-.home-product-item__rating{
+.home__product-item--rating{
     display: flex; 
     cursor: pointer;
     margin: 2px 0 0 auto;
 }
 
-.home-product-item__sold{
+.home__product-item--sold{
     font-size: 1.3rem;
     color: rgba(0,0,0,.87);
     overflow: hidden;
@@ -717,7 +759,7 @@ i.icon-liked{
     color: #ffce3d;
     fill: #ffce3d;
 }
-.home-product-item__producer{
+.home__product-item--producer{
     margin-top: 5px;
     text-align: right;
     font-weight: 400;
@@ -725,7 +767,7 @@ i.icon-liked{
     color: rgba(0,0,0,.65);
 }
 
-.home-product-item__favourite{
+.home__product-item--favourite{
    position: absolute;
    top: 10;
    left: -4px;
@@ -738,7 +780,7 @@ i.icon-liked{
    border-bottom-right-radius: 2px;
    z-index: 1;
 }
-.home-product-item__favourite::before{
+.home__product-item--favourite::before{
     content: "";
     left: 0;
     bottom: -4px;
@@ -750,7 +792,7 @@ i.icon-liked{
 .icon-plus{
     font-size: 0.9rem;
 }
-.home-product-item__saleoff{
+.home__product-item--saleoff{
     background-color: rgba(255,212,36,.9);
     top: 0;
     right: 0;
@@ -762,7 +804,7 @@ i.icon-liked{
     text-align: center;
     z-index: 1;
 }
-.home-product-item__saleoff::after{
+.home__product-item--saleoff::after{
     content: "";
     position: absolute;
     left: 0;
@@ -772,16 +814,15 @@ i.icon-liked{
    border-color: transparent rgba(255,212,36,.9) transparent rgba(255,212,36,.9); ;
 
 }
-.home-product-item__percent{
+.home__product-item--percent{
     color: #ee4d2d;
     font-size: 1.4rem;
     line-height: 1.4rem;
     font-weight: 400;
  
 }
-.home-product-item__label{
+.home__product-item--label{
     color: white;
     font-weight: 400;
     font-size: 1.3rem;
 }
-

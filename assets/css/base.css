@@ -15,49 +15,31 @@ html{
     box-sizing: border-box;
 }
 
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width{
-    width: 100%;
-}
-
-.grid__row{
+.select__input{
     display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right:auto;
-}
-/*Test*/
-.grid__column-2{
-    width: 16.6667%;
-}
-.grid__column-10{
-    width: 83.333%;  
-
-}
-.grid__column-2-4{
-    width: 20%;
-}
-/*Select input*/
-.select-input{
     position: relative; 
     margin-left: 10px;
-    max-width: 200px;
+    min-width: 200px;
     height: 34px;
     border-radius: 2px;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    cursor: pointer; 
 }
-.select-input:hover .select-input__dropdown{
+
+.select__input:hover .select__input-dropdown{
     display: block;
 }
-.select-input__dropdown{
+
+.select__input-label{
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 12px ;
+}
+
+
+.select__input-dropdown{
     position: absolute;
     left:0;
     right: 0;
@@ -71,7 +53,8 @@ html{
     border-radius: 2px;
     background-color: white;
 }
-.select-input__link{
+
+.select__input-link{
     display: flex;
     height: 34px;
     width: 173px;
@@ -79,14 +62,18 @@ html{
     justify-content: space-between;
     padding:0 12px 0 15px;   
 }
-
-.select-input__icon{
-    cursor: pointer;
-    margin-right: 10px;  
+.price{
+    color: black;
+    align-items: center;
 }
+
+.price:hover{
+    color: #ee4d2d;
+}
+
 /*CSS phan trang*/
 .phantrang{
-    margin-top: 40px ;
+    margin-top: 40px; 
 }
 .pagination{
     display: flex;
@@ -96,26 +83,26 @@ html{
     margin: 20px 0 60px 0;
 }
 
-.pagination-item_iconleft{
+.pagination__item-iconleft{
     
     margin-right: 15px;   
 }
 
-.pagination-item_iconright{
+.pagination__item-iconright{
     margin-left: 15px;
 }
 
-.pagination-item_icon{
+.pagination__item-icon{
     margin-top: 2px;
 }
 
-.pagination-item{
-    margin: 0 15px;  
+.pagination__item{
+    margin: 0 15px;     
 }
 
-.pagination-link{
+.pagination__link{
     display: block;
-    font-size: 1.6rem;
+    font-size: 2rem;
     min-width: 40px;
     height: 30px;
     font-weight: 300;
@@ -125,7 +112,7 @@ html{
     justify-content: center;
     color: red;
 }
-.pagination-item__active .pagination-link{
+.pagination__item-active .pagination__link{
     color: white;
     background-color: #ee4d2d;
 }
@@ -134,45 +121,45 @@ html{
     background-color: #fbfbfb;
     border-top: 4px solid #ee4d2d;
 }
-.footer-title
+.footer__title
 {
     margin: 40px 0 20px;
-   color: var(--text-color);
+    color: var(--text-color);
     font-size: 1.3rem;
     font-weight: 700;
 }
-.footer-list{
+.footer__list{
     font-size: 1.3rem;
     padding: 0;
     margin: 0 0 25px;
 }
-.footer-item{
+.footer__item{
     margin-bottom: 12px;
 }
 
-.footer-link{
+.footer__link{
     font-size: 1.3rem;
     color: var(--text-color);
 }
-.footer-link:hover{
+.footer__link:hover{
     color: #ee4d2d;
 }
-.footer-icon{
+.footer__icon{
     font-size: 1.6rem;
     margin: 0 10px 4px 0;
 }
-.footer-download{
+.footer__download{
     display: flex;
     padding: 0;
     margin: 0;
 }
-.footer-item--qrcode{
+.footer__item-qrcode{
     width: 86px;
     height: 86px;
   border: 1px solid rgba(0,0,0,.09);
     margin-right: 15px;
 }
-.footer-item--app{
+.footer__item-app{
 display: flex;
 justify-content: space-around;
 flex-direction: column;
