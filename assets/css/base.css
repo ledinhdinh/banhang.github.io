@@ -2,6 +2,12 @@
     --white-color:#fff;
     --black-color:#000;
     --text-color:#333;
+
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --search-navbar: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 *{
@@ -83,8 +89,7 @@ html{
     margin: 20px 0 60px 0;
 }
 
-.pagination__item-iconleft{
-    
+.pagination__item-iconleft{   
     margin-right: 15px;   
 }
 

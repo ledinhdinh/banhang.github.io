@@ -37,16 +37,14 @@
                         <li class="header__navbar-item header__navbar-item--QRcode header__navbar-item--a">
                             
                             Tải ứng dụng
-                             <div class="QR_code">
-                                 <a href="https://shopee.vn/web">
-                                    <img src="./assets/img/QRCode.png" alt="Mã code qr" class="QR_code_image">
-                                 </a>
-                         
-                             
+                             <div class="QR__code">
+
+                                    <img src="./assets/img/QRCode.png" alt="Mã code qr" class="QR__code-image">
+                        
                                 <div class="link">
-                                    <a href="https://shopee.vn/web" class="image_link"><img src="./assets/img/AppStore.png" alt="AppStore" class="image_link_a"></a>
-                                    <a href="https://shopee.vn/web" class="image_link"><img src="./assets/img/GGPlay.png" alt="GGPlay" class="image_link_a"></a>
-                                   <a href="https://shopee.vn/web" class="image_link"><img src="./assets/img/AppGallery.png" alt="AppGallery" class="image_link_a"></a>
+                                    <a href="https://shopee.vn/web" class="image__link"><img src="./assets/img/AppStore.png" alt="AppStore" class="image__link-a"></a>
+                                    <a href="https://shopee.vn/web" class="image__link"><img src="./assets/img/GGPlay.png" alt="GGPlay" class="image__link-a"></a>
+                                   <a href="https://shopee.vn/web" class="image__link"><img src="./assets/img/AppGallery.png" alt="AppGallery" class="image__link-a"></a>
                                 </div>
     
                              </div>
@@ -104,8 +102,13 @@
                 </nav>
     
                 <div class="search__navbar ">
-    
-                    <div class="logo__shopee">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">                   
+                        <i class="fas fa-search"></i>
+                    </label>
+                   
+                   
+                   
+                    <div class="logo__shopee ">
     
                         <a href="" class="shoppe__icon">
                             <svg viewBox="0 0 192 65" class="shoppe_image">
@@ -118,7 +121,8 @@
     
                         </a>                
                     </div> 
-    
+                    <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="header__search-checkbox">
+
                     <div class="search">
     
                         <div class="search__item">
@@ -168,30 +172,81 @@
                     </div>
     
                     <div class="shopping ">
-                        <div class="kichthuoc-icon">
-                            <div class="cart-container">
-                                <a class="link_shopping">
-                                    <i class="fas fa-shopping-cart" ></i>
-                                </a>
-                          
+
+                            <div class="header__cart">
+                                <a class="header__cart-link">
+                                    <i class="fas fa-shopping-cart header__cart-icon">
+                                        <span class="header__cart-notice">3</span>    
+                                    </i>
+                                   
+                                </a>  
+                                                   
+                             
                             </div>
-                            
-                        </div>
-                       
-                       
+          
                     </div>
     
                 </div>
             </div>
+
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá </a>
+                </li>
+            </ul>
             
     </header>
 
     <div class="homepage">
 
         <div class="grid wide">
-    
+
+            <nav class="mobile__category">
+                <ul class="mobile__category-list">
+                    <li class="mobile__category-item">
+                        <a href="" class="mobile__category-link">
+                            Dụng cụ & Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobile__category-item">
+                        <a href="" class="mobile__category-link">
+                            Dụng cụ & Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobile__category-item">
+                        <a href="" class="mobile__category-link">
+                            Dụng cụ & Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobile__category-item">
+                        <a href="" class="mobile__category-link">
+                            Dụng cụ & Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobile__category-item">
+                        <a href="" class="mobile__category-link">
+                            Dụng cụ & Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobile__category-item">
+                        <a href="" class="mobile__category-link">
+                            Dụng cụ & Thiết bị tiện ích
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
                 <div class="section__banner">
+
                     <div class="slide__image">
                         
                  
@@ -243,149 +298,170 @@
                     </div>
 
                     <div class="section__tienich">
-                        <a href="https://shopee.vn/m/o-nha-khong-kho-co-shopee-lo">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon" style="background-image: url(./assets/img/yentam.png);background-repeat: no-repeat;background-size: contain;">                                  
+                        <ul class="section__tienich-list">
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon" style="background-image: url(./assets/img/yentam.png);background-repeat: no-repeat;background-size: contain;">                                  
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Yên Tâm Mua Hàng
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Yên Tâm Mua Hàng
-                                </div>
-                            </div>
-                          
-                            
-                        </a>
-                        <a href="https://shopee.vn/m/shopee-cashback">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon" style="background-image: url(./assets/img/hoanxu.png);background-repeat: no-repeat;background-size: contain;">
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon" style="background-image: url(./assets/img/hoanxu.png);background-repeat: no-repeat;background-size: contain;">
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Hoàn Xu 20% - Đơn Từ 0Đ
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Hoàn Xu 20% - Đơn Từ 0Đ
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/dt.gif);background-repeat: no-repeat;background-size: contain;">                                   
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/dt.gif);background-repeat: no-repeat;background-size: contain;">                                   
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Nạp Thẻ, Hóa Đơn & E-voucher
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Nạp Thẻ, Hóa Đơn & E-voucher
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/sogi.gif);background-repeat: no-repeat;background-size: contain;">                                     
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/sogi.gif);background-repeat: no-repeat;background-size: contain;">                                     
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Shopee Số Gì Đây
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Shopee Số Gì Đây
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/xtra.png);background-repeat: no-repeat;background-size: contain;">                                    
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/xtra.png);background-repeat: no-repeat;background-size: contain;">                                    
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Freeship Xtra 70k Mỗi Ngày
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Freeship Xtra 70k Mỗi Ngày
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/hh.png);background-repeat: no-repeat;background-size: contain;">                                    
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/hh.png);background-repeat: no-repeat;background-size: contain;">                                    
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Hàng Hiệu -50%
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Hàng Hiệu -50%
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/db.png);background-repeat: no-repeat;background-size: contain;">                                     
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/db.png);background-repeat: no-repeat;background-size: contain;">                                     
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Hàng Quốc Tế - Deal Đồng Giá
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Hàng Quốc Tế - Deal Đồng Giá
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/pre.png);background-repeat: no-repeat;background-size: contain;">
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/pre.png);background-repeat: no-repeat;background-size: contain;">
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe" >
+                                            Shopee Premium
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe" >
-                                    Shopee Premium
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/tech.png);background-repeat: no-repeat;background-size: contain;">
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/tech.png);background-repeat: no-repeat;background-size: contain;">
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Tech Zone - Siêu Thị Điện Tử
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Tech Zone - Siêu Thị Điện Tử
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="section__khung">
-                                <div class="iconTienIch">
-                                    <div class="section__khung-icon">
-                                        <div class="logo-icon"  style="background-image: url(./assets/img/re.png);background-repeat: no-repeat;background-size: contain;">
+                                </a>
+                            </li>
+                            <li class="section__tienich-item">
+                                <a href="" class="section__tienich-link">
+                                    <div class="section__khung">
+                                        <div class="iconTienIch">
+                                            <div class="section__khung-icon">
+                                                <div class="logo-icon"  style="background-image: url(./assets/img/re.png);background-repeat: no-repeat;background-size: contain;">
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="section__tieude editTieuDe">
+                                            Gì Cũng Rẻ - Từ 1K
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="section__tieude editTieuDe">
-                                    Gì Cũng Rẻ - Từ 1K
-                                </div>
-                            </div>
-                        </a>
+                                </a>
+                            </li>
+                        </ul>                           
                     </div>
+
                 </div>
 
                 <div class="section__welcom" style="background-image: url(./assets/img/welcom.jpg);">
@@ -517,7 +593,7 @@
 
                             <div class="row sm-gutter ">
 
-                                  <div class="col l-2-4  m-4 m-3 c-6">
+                                  <div class="col l-2-4 m-4 m-3 c-6">
                                <!-- Product item-->
                                <div class="home__product-item">
 
@@ -1043,7 +1119,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col l-2-4 m-4 m-3 c-6">
+                <div class="col l-2-4 m-4 m-3 c-12">
                     <h4 class="footer__title">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h4>
                     <ul class="footer__download">
                         <li class="footer__item-qrcode">
