@@ -515,6 +515,7 @@
     height: 45px; 
 }
 .section__tienich{
+    min-height: 108px;
     margin-top: 10px;
 }
 
